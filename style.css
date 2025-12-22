@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #0d1117;
+    color: #e6edf3;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    position: fixed;
+    width: 100%;
+    background: rgba(13,17,23,0.9);
+    z-index: 1000;
+}
+
+.navbar a {
+    margin-left: 25px;
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+}
+
+.logo {
+    color: #58a6ff;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero span {
+    color: #58a6ff;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #58a6ff;
+    color: #000;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    color: #58a6ff;
+}
+
+.dark {
+    background: #010409;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 20px;
+    background: #161b22;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px #58a6ff;
+}
+
+.project-card {
+    background: #161b22;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 700px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #010409;
+}
